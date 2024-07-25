@@ -1,0 +1,21 @@
+.section{
+  &--default-padding{
+    padding: 75px 0;
+  }
+  &--padding-top-big{
+    padding: 150px 0 75px;
+  }
+
+  &__head{
+    margin-bottom: 120px;
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: var(--font-big);
+    line-height: 128%;
+    text-transform: uppercase;
+    color: var(--chernyy);
+  }
+}

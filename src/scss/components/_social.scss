@@ -1,0 +1,16 @@
+.social{
+  &__list{
+    @include flex-all-sb
+  }
+
+  &__item + &__item{
+    margin-left: 40px;
+  }
+
+  &__link{
+    svg{
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

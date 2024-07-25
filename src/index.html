@@ -7,10 +7,205 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <div class="container">
+          <nav class="breadcrumbs__nav" aria-label="Breadcrumb">
+            <ul class="breadcrumbs__list list-reset">
+                <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <a class="breadcrumbs__link" href="#" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <a class="breadcrumbs__link" href="#" itemprop="item">
+                        <span itemprop="name">Услуги</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </li>
+                <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                    <span class="breadcrumbs__link" itemprop="name">Создание сайтов</span>
+                    <meta itemprop="position" content="3" />
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="page-head">
+       <div class="container">
+        <div class="page-head__row">
+          <div class="page-head__left">
+            <h1 class="page-head__title">
+              Создание сайтов
+            </h1>
+            <div class="page-head__tegs tegs">
+              <ul class="tegs__list list-reset">
+                <li class="tegs__item"><a href="#" class="tegs__link">#сайт</a></li>
+                <li class="tegs__item"><a href="#" class="tegs__link">#разработка</a></li>
+                <li class="tegs__item"><a href="#" class="tegs__link">#продвижение</a></li>
+                <li class="tegs__item"><a href="#" class="tegs__link">#сайт-каталог</a></li>
+                <li class="tegs__item"><a href="#" class="tegs__link">#landing</a></li>
+                <li class="tegs__item"><a href="#" class="tegs__link">#корпоративный сайт</a></li>
+              </ul>
+            </div>
+            <button class="page-head__button button button--default button--font-lit button--size-default">
+              Обсудить проект
+              <svg class="button__arrow-right">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="page-head__right">
+            <strong>Современный сайт является дополнительным инструментом продаж в компании.</strong>
+            Находясь на топовых позициях выдачи браузерами, он приносит прибыль: привлекает
+            потенциальных клиентов и покупателей, увеличивает спрос и повышает узнаваемость бренда
+          </div>
+        </div>
+       </div>
+      </div>
+      <div class="services section section--padding-top-big">
+        <div class="container">
+          <div class="services__grid">
+            <a class="services-item" href="#">
+              <div class="services-item__title">
+                Интернет-магазины
+              </div>
+              <div class="services-item__desc">
+                от простых лендингов до сложных маркетплейсов с интеграцией платежных систем
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a class="services-item" href="#">
+              <div class="services-item__title">Корпоративные сайты</div>
+              <div class="services-item__desc">
+                веб-ресурс для представительства компании,
+                информационные порталы, каталоги продукции
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a class="services-item" href="#">
+              <div class="services-item__title">
+                Лендинги
+              </div>
+              <div class="services-item__desc">
+                страницы, направленные на продажи,
+                повышение конверсии
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a class="services-item" href="#">
+              <div class="services-item__title">
+                Промо-сайты
+              </div>
+              <div class="services-item__desc">
+                посвященные конкретному продукту
+                или проводимой акции
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a class="services-item" href="#">
+              <div class="services-item__title">
+                Сайты-визитки
+              </div>
+              <div class="services-item__desc">
+                лаконичные страницы с информацией
+                для небольших предприятий
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a class="services-item" href="#">
+              <div class="services-item__title">
+                И многое другое
+              </div>
+              <div class="services-item__desc">
+                разработаем сайт под ключ любой
+                бизнес-тематики
+              </div>
+              <svg class="services-item__icon">
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section class="advantages section section--default-padding">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">
+              Преимущества
+            </h2>
+          </div>
+          <div class="advantages__grid">
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Опытный
+                коллектив
+              </div>
+              <div class="advantages__desc">
+                В нашей команде только профессионалы
+                с многолетним опытом веб-разработки
+              </div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Индивидуальный подход
+              </div>
+              <div class="advantages__desc">
+                Каждый проект уникален, мы учитываем
+                все требования и пожелания
+              </div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Поддержка, продвижение
+              </div>
+              <div class="advantages__desc">
+                Не просто создаем сайты, а помогаем
+                им успешно развиваться в сети
+              </div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Сжатые
+                сроки
+              </div>
+              <div class="advantages__desc">
+                Мы работаем оперативно, чтобы вы получили
+                свой сайт в кратчайшие сроки
+              </div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Комплексный
+                подход
+              </div>
+              <div class="advantages__desc">
+                Мы предлагаем не только разработку сайтов,
+                но и их последующее продвижение
+              </div>
+            </div>
+            <div class="advantages-item">
+              <div class="advantages__title">
+                Доступные
+                цены
+              </div>
+              <div class="advantages__desc">
+                Мы предлагаем разумные цены как для типовых, так и для уникальных проектов
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример include -->

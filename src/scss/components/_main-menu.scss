@@ -1,0 +1,54 @@
+.main-menu{
+  &__list{
+    @include flex;
+    gap: 60px;
+  }
+  &__link{
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: var(--chernyy);
+    transition: 0.3s;
+
+    &:before,&:after{
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      top: 100%;
+      margin-top: 5px;
+      background: var(--oranzhevyy);
+    }
+
+    &:before{
+      left: 0;
+    }
+
+    &:after{
+      right: 0;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    @include hover{
+      &:before{
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      &:after{
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+      }
+    }
+
+    &:active{
+      &::before{
+        background-color: var(--siniy);
+        z-index: 10;
+      }
+    }
+
+  }
+}

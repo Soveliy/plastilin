@@ -2,11 +2,31 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Rising Sun", sans-serif;
+  --third-family: "Neue Machina", sans-serif;
+  --content-width: 1770px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+	--siniy: #1b3990;
+	--chernyy: #181818;
+	--oranzhevyy: #e55030;
+	--osnovnoy-tekst: rgba(24, 24, 24, 0.8);
+	--polosy: #c7c7c7;
+	--malenkiy-zagolovok: #9b9b9b;
+	--chernye-polosy: #4f4f4f;
+	--seryy-fon-menyu: #eff2fa;
+	--belyy: #fff;
+
+
+  // font-size
+
+  --font-lit: 1rem;
+  --font-default: 1.125rem; // 18px
+  --font-medium: 1.75rem; // 28px
+  --font-medium-xl:2.5rem; // 40px
+  --font-big: 4.375rem; // 70px
+
 }

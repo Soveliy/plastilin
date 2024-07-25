@@ -1,0 +1,15 @@
+.tegs{
+  &__list{
+    @include flex;
+  }
+  &__item + &__item{
+    margin-left: 30px;
+  }
+  &__link{
+    line-height: 110%;
+    text-transform: lowercase;
+    color: var(--oranzhevyy);
+    transition: .4s;
+  }
+
+}

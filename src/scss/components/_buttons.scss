@@ -1,0 +1,35 @@
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+    &--default{
+      color: var(--belyy);
+      background: var(--oranzhevyy);
+    }
+
+    &--font-lit{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 110%;
+    }
+
+    &--size-default{
+      padding: 11px 20px;
+    }
+
+    &__arrow-right{
+      width: 22px;
+      height: 15px;
+      margin-left: 20px;
+      stroke-width: 2px;
+      stroke: var(--belyy);
+    }
+}
