@@ -1,0 +1,68 @@
+.prices{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.price-card{
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  box-sizing: border-box;
+  border: 1px solid var(--polosy);
+  border-radius: 10px;
+
+  &__header{
+    @include flex-all-sb;
+    margin-bottom: 2.5rem;
+  }
+
+  &__name{
+    font-size: var(--font-default);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--chernyy);
+  }
+
+  &__button{
+    padding: 11px 20px;
+    box-sizing: border-box;
+    background-color: var(--chernyy);
+    border-radius: 20px;
+  }
+
+  &__icon{
+    width: 20px;
+    height: 13px;
+    line-height: 0;
+    stroke-width: 2px;
+    stroke: var(--belyy);
+  }
+
+  &__default{
+
+    font-size: var(--font-medium);
+    font-weight: 700;
+    line-height: 128%;
+    color: var(--oranzhevyy);
+
+    span{
+      font-size: var(--font-big);
+    }
+  }
+
+  &__list{
+    margin-top: 5rem;
+  }
+
+  &__item{
+    @include flex-all-sb;
+
+    & + &{
+      margin-top: 1.25rem;
+    }
+  }
+}
