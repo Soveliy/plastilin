@@ -1,0 +1,31 @@
+.our-clients{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+  &-item{
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 10px;
+    & + &{
+      border-left: 1px solid var(--polosy);
+    }
+
+    &:hover{
+      img{
+        filter: none;
+      }
+    }
+
+    img{
+      display: block;
+      max-width: 100%;
+      max-height: 120px;
+      transition: 0.4s;
+      filter: grayscale(1);
+    }
+  }
+}
