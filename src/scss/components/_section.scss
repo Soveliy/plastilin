@@ -18,4 +18,12 @@
     text-transform: uppercase;
     color: var(--chernyy);
   }
+
+  &__footer{
+    display: flex;
+    margin-top: 80px;
+    &--flex-end{
+      justify-content: flex-end;
+    }
+  }
 }
