@@ -1,0 +1,16 @@
+.reviews{
+  &-item{
+    position: relative;
+    padding-top: 3.88rem;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 22px;
+      width: 28px;
+      background: url(../../img/quote.svg) no-repeat center center;
+    }
+  }
+}
