@@ -1,8 +1,28 @@
 .reviews{
   &-item{
     position: relative;
-    padding-top: 3.88rem;
+    padding:  3.88rem 0 2.5rem;
+    border-bottom: 1px solid var(--polosy);
+    box-sizing: border-box;
 
+    &__bottom{
+      @include flex-all-sb;
+      margin-top: 2.5rem;
+    }
+
+    &__client{
+      @include flex-v-center;
+    }
+    &__avatar{
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    &__client-name{
+      margin-bottom: 10px;
+      font-size: var(--font-medium);
+      letter-spacing: -0.03em;
+    }
     &:before{
       content: '';
       position: absolute;
