@@ -1,0 +1,135 @@
+.form{
+  &__radios{
+    margin-bottom: 2.5rem;
+    &-label{
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+    &-row{
+      @include flex;
+    }
+
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  &__item-container{
+    padding: 10px;
+    box-sizing: border-box;
+    &--w50{
+      width: 50%;
+    }
+    &--w100{
+      width: 100%;
+    }
+  }
+  &__item{
+    position: relative;
+  }
+  &__input{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+    background: var(--seryy-fon-menyu);
+    height: 3.75rem;
+    border: 1px solid var(--seryy-fon-menyu);
+    outline: none;
+    transition: .4s;
+    &:focus{
+      border-color: var(--siniy);
+    }
+    &:not(:placeholder-shown) +  .form__pseudoplaceholder,
+    &:focus + .form__pseudoplaceholder{
+      font-size: .8rem;
+      transform: translateY(5px);
+    }
+
+
+  }
+  &__textarea{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
+    border-radius: 1.25rem;
+    background: var(--seryy-fon-menyu);
+    height: 9.25rem;
+    border: 1px solid var(--seryy-fon-menyu);
+    transition: .4s;
+    outline: none;
+    resize: none;
+    &:focus{
+      border-color: var(--siniy);
+    }
+    &:not(:placeholder-shown) +  .form__pseudoplaceholder,
+    &:focus + .form__pseudoplaceholder{
+      font-size: .8rem;
+      transform: translateY(5px);
+    }
+  }
+
+  &__pseudoplaceholder{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    transform: translateY(1rem);
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: var(--malenkiy-zagolovok);
+    pointer-events: none;
+    transition: .4s;
+  }
+  &__policy{
+    font-size: 0.875rem;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: var(--osnovnoy-tekst);
+    a{
+      color: var(--osnovnoy-tekst);
+      text-decoration: underline;
+      text-underline-offset: 2px
+    }
+  }
+  &__bottom{
+    @include flex-v-center;
+    margin-top: 1.25rem;
+    &--flex-end{
+      justify-content: flex-end;
+      .form__button {
+        margin-left: 40px;
+      }
+    }
+
+  }
+  &__button{
+    &:disabled{
+      opacity: 0.2;
+    }
+  }
+}
+.radio-btn{
+  display: flex;
+  cursor: pointer;
+  input{
+    display: none;
+
+    &:checked + .radio-btn__wrap{
+      background: var(--oranzhevyy);
+      color: var(--belyy);
+    }
+  }
+  &__wrap{
+    border-radius: 0.625rem;
+    padding: 13px 35px 15px 35px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+    color: var(--osnovnoy-tekst);
+    transition: 0.4s;
+  }
+}

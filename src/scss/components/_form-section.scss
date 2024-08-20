@@ -1,0 +1,56 @@
+.form-section{
+  &__row{
+    @include flex-v-center;
+    gap: 120px;
+  }
+  &__info-section{
+    max-width: 714px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+  &__form{
+    width: 100%;
+  }
+}
+.info-section{
+  padding: 1.88rem  2.5rem;
+  box-sizing: border-box;
+  background: var(--oranzhevyy);
+  border-radius: 1.25rem;
+  &__title{
+    margin: 0 0 1.25rem;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: var(--belyy);
+    span{
+      display: block;
+      color: var(--chernyy);
+    }
+  }
+  &__desc{
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--belyy);
+  }
+  &__bottom{
+    @include flex;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  &__label{
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--belyy);
+    margin-bottom: 5px;
+  }
+  &__link{
+    font-weight: 700;
+    font-size: var( --font-medium);
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    color: var(--belyy);
+  }
+}
