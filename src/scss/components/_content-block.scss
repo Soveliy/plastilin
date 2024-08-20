@@ -1,0 +1,13 @@
+.content-block{
+  > *:first-child{
+    margin-top: 0;
+  }
+  > *:last-child{
+    margin-bottom: 0;
+  }
+  p{
+    font-size: var(--font-medium);
+    line-height: 150%;
+    letter-spacing: -0.03em;
+  }
+}

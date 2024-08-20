@@ -1,0 +1,27 @@
+.about-us{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &-item{
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    &__value{
+      font-weight: 700;
+      font-size: var(--font-big);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: var(--oranzhevyy);
+    }
+    &__name{
+      margin-bottom: 7px;
+      line-height: 125%;
+      letter-spacing: -0.03em;
+    }
+  }
+  &__content-block{
+    margin-top: 5rem;
+  }
+
+}
