@@ -1,22 +1,37 @@
-.header{
-  padding: 60px 0 30px;
+.header {
+  padding: 3.3125rem 0 1.375rem;
   border-bottom: 1px solid var(--polosy);
-  &__row{
+  &__row {
     @include flex-all-sb();
   }
 
-  &__right-side{
+  &__right-side {
     @include flex-all-sb();
-    gap: 30px;
+    gap: 1.875rem;
   }
 
-  &__phone{
+  &__phone {
+    height: 2rem;
+    overflow: hidden;
     font-weight: 500;
-    font-size: 28px;
+    font-size: var(--font-medium);
     line-height: 110%;
     letter-spacing: -0.03em;
     color: var(--chernyy);
+    @include hover {
+      &:hover {
+        span {
+          transform: translateY(-2rem);
+        }
+      }
+    }
+    span {
+      display: block;
+      transition: 0.4s;
+      &::after {
+        display: block;
+        content: attr(data-hover);
+      }
+    }
   }
-
 }
-

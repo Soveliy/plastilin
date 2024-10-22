@@ -1,30 +1,37 @@
-.reviews{
-  &-item{
+.reviews {
+  &-item {
     position: relative;
-    padding:  3.88rem 0 2.5rem;
+    padding: 3.88rem 0 2.1rem;
     border-bottom: 1px solid var(--polosy);
     box-sizing: border-box;
-
-    &__bottom{
+    &__desc {
+      line-height: 150%;
+      letter-spacing: -0.03em;
+    }
+    &__bottom {
       @include flex-all-sb;
       margin-top: 2.5rem;
     }
 
-    &__client{
+    &__client {
       @include flex-v-center;
+
+      &-project {
+        letter-spacing: -0.03em;
+      }
     }
-    &__avatar{
+    &__avatar {
       flex-shrink: 0;
       margin-right: 15px;
     }
 
-    &__client-name{
-      margin-bottom: 10px;
+    &__client-name {
+      margin-bottom: 0;
       font-size: var(--font-medium);
       letter-spacing: -0.03em;
     }
-    &:before{
-      content: '';
+    &:before {
+      content: "";
       position: absolute;
       top: 0;
       left: 0;

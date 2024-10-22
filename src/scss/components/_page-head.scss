@@ -1,10 +1,10 @@
-.page-head{
-  &__row{
+.page-head {
+  &__row {
     @include flex;
     justify-content: space-between;
   }
 
-  &__title{
+  &__title {
     margin: 0;
     font-weight: 700;
     font-size: 70px;
@@ -12,24 +12,26 @@
     text-transform: uppercase;
     color: var(--chernyy);
   }
-  &__left{
+  &__left {
     // max-width: 47.9375rem;
   }
-  &__tegs{
-    margin-top: 40px;
+  &__tegs {
+    margin-top: 1.0625rem;
   }
-  &__right{
+  &__right {
+    padding-top: 0.75rem;
     max-width: 52.875rem;
     margin-left: 1rem;
     width: 100%;
+    line-height: 150%;
   }
 
-  &__button{
-    margin-top: 60px;
+  &__button {
+    margin-top: 3.4375rem;
   }
 
   b,
-  strong{
+  strong {
     font-weight: 500;
     color: var(--chernyy);
   }

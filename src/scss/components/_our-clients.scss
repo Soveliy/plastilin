@@ -1,26 +1,26 @@
-.our-clients{
-  &__grid{
+.our-clients {
+  &__grid {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
-  &-item{
+  &-item {
     height: 135px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     padding: 0 10px;
-    & + &{
-      border-left: 1px solid var(--polosy);
+    border-left: 1px solid var(--polosy);
+    &:last-child {
+      border-right: 1px solid var(--polosy);
     }
-
-    &:hover{
-      img{
+    &:hover {
+      img {
         filter: none;
       }
     }
 
-    img{
+    img {
       display: block;
       max-width: 100%;
       max-height: 120px;

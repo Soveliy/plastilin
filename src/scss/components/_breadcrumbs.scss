@@ -1,14 +1,13 @@
-.breadcrumbs{
-  padding: 150px 0 80px;
-  &__list{
+.breadcrumbs {
+  padding: 9rem 0 3.4375rem;
+  &__list {
     display: flex;
   }
-  &__item:not(:first-child){
-
-    .breadcrumbs__link{
-        @include flex-all-sb;
-      &:before{
-        content: '';
+  &__item:not(:first-child) {
+    .breadcrumbs__link {
+      @include flex-all-sb;
+      &:before {
+        content: "";
         height: 10px;
         width: 10px;
         background: url(../img/ep_arrow-up-bold.svg);
@@ -16,16 +15,15 @@
       }
     }
   }
-  &__item:not(:last-child){
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
-  &__link{
+  &__link {
     font-size: 16px;
     line-height: 150%;
     color: var(--malenkiy-zagolovok);
-
   }
-  span.breadcrumbs__link{
+  span.breadcrumbs__link {
     color: var(--chernyy);
   }
 }

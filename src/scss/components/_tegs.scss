@@ -1,15 +1,23 @@
-.tegs{
-  &__list{
+.tegs {
+  &__list {
     @include flex;
   }
-  &__item + &__item{
+  &__item + &__item {
     margin-left: 30px;
   }
-  &__link{
+  &__link {
     line-height: 110%;
     text-transform: lowercase;
     color: var(--oranzhevyy);
-    transition: .4s;
-  }
+    transition: 0.4s;
 
+    &--lit {
+      font-size: var(--font-lit);
+    }
+
+    &--default {
+      font-size: var(--default);
+      letter-spacing: -0.03em;
+    }
+  }
 }

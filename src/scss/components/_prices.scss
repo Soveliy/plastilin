@@ -1,12 +1,12 @@
-.prices{
-  &__grid{
+.prices {
+  &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 5rem;
   }
 }
 
-.price-card{
+.price-card {
   display: flex;
   flex-direction: column;
   padding: 35px;
@@ -14,12 +14,13 @@
   border: 1px solid var(--polosy);
   border-radius: 10px;
 
-  &__header{
+  &__header {
     @include flex-all-sb;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 
-  &__name{
+  &__name {
+    margin: 0;
     font-size: var(--font-default);
     font-weight: 600;
     line-height: 120%;
@@ -27,14 +28,14 @@
     color: var(--chernyy);
   }
 
-  &__button{
+  &__button {
     padding: 11px 20px;
     box-sizing: border-box;
     background-color: var(--chernyy);
     border-radius: 20px;
   }
 
-  &__icon{
+  &__icon {
     width: 20px;
     height: 13px;
     line-height: 0;
@@ -42,27 +43,31 @@
     stroke: var(--belyy);
   }
 
-  &__default{
-
+  &__default {
     font-size: var(--font-medium);
     font-weight: 700;
     line-height: 128%;
     color: var(--oranzhevyy);
 
-    span{
+    span {
       font-size: var(--font-big);
     }
   }
-
-  &__list{
-    margin-top: 5rem;
+  &__symbol {
+    margin-left: 10px;
+  }
+  &__list {
+    margin-top: 4.6rem;
   }
 
-  &__item{
+  &__item {
     @include flex-all-sb;
-
-    & + &{
+    letter-spacing: -0.03em;
+    & + & {
       margin-top: 1.25rem;
+    }
+    &-value {
+      font-weight: 700;
     }
   }
 }

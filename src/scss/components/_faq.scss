@@ -1,12 +1,12 @@
-.faq-item{
+.faq-item {
   border-bottom: 1px solid var(--polosy);
-  &:first-child{
-    padding-bottom: 5rem;
+  &:first-child {
+    padding-bottom: 4.8rem;
   }
-  &:not(:first-child){
-    padding: 5rem 0;
+  &:not(:first-child) {
+    padding: 4.7rem 0 4.5rem;
   }
-  &__head{
+  &__head {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -17,40 +17,41 @@
     color: var(--osnovnoy-tekst);
     cursor: pointer;
   }
-  &__body{
+  &__body {
     box-sizing: border-box;
     max-height: 0;
+    max-width: 68%;
     opacity: 0;
     overflow: hidden;
-    transition:  0.4s;
+    transition: 0.4s;
     line-height: 150%;
     letter-spacing: -0.03em;
     color: var(--osnovnoy-tekst);
 
-    > *:first-child{
+    > *:first-child {
       margin-top: 0;
     }
-    > *:last-child{
+    > *:last-child {
       margin-bottom: 0;
     }
   }
-  &__icon{
+  &__icon {
     width: 28px;
     height: 28px;
     margin-left: 30px;
     transition: 0.4s;
-    path{
+    path {
       stroke-width: 2px;
       fill: var(--chernyy);
     }
   }
-  &.js-active{
-    .faq-item__body{
+  &.js-active {
+    .faq-item__body {
       padding-top: 2.5rem;
-      max-height: 100px;
+      max-height: 62.5rem;
       opacity: 1;
     }
-    .faq-item__icon{
+    .faq-item__icon {
       transform: rotate(45deg);
       fill: var(--oranzhevyy);
     }

@@ -1,33 +1,34 @@
-.services{
-  &__grid{
+.services {
+  &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 7.5rem;
+    margin-top: -4.5625rem;
   }
 
-  &-item{
+  &-item {
     position: relative;
     @include flex;
-    gap: 70px;
-    padding: 5rem 0;
+    align-items: center;
+    gap: 4.375rem;
+    padding: 4.5625rem 0;
     box-sizing: border-box;
 
-    @include hover{
-
+    @include hover {
       .services-item__title,
-      .services-item__desc{
+      .services-item__desc {
         color: var(--oranzhevyy);
       }
 
-      .services-item__icon{
+      .services-item__icon {
         opacity: 1;
       }
-      &:after{
+      &:after {
         width: 100%;
       }
     }
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
@@ -36,8 +37,8 @@
       background-color: var(--polosy);
     }
 
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       position: absolute;
       left: 0;
       bottom: 0;
@@ -47,31 +48,31 @@
       transition: 0.4s;
     }
 
-    &__title{
-      max-width: 312px;
+    &__title {
+      max-width: 19.5rem;
       width: 100%;
       font-weight: 500;
       flex-shrink: 0;
       font-size: var(--font-medium);
       font-weight: 500;
-      line-height: 150%;
+      line-height: 1;
       color: var(--chernyy);
       transition: 0.4s;
     }
 
-    &__desc{
+    &__desc {
       max-width: 27.75rem;
       line-height: 150%;
       color: var(--osnovnoy-tekst);
       transition: 0.4s;
     }
 
-    &__icon{
+    &__icon {
       position: absolute;
       top: 50%;
       right: 0;
-      width: 20px;
-      height: 13px;
+      width: 1.25rem;
+      height: 0.8125rem;
       transform: translateY(-50%);
       stroke-width: 2px;
       stroke: var(--oranzhevyy);

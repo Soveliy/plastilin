@@ -1,16 +1,22 @@
-.section{
-  &--default-padding{
-    padding: 75px 0;
+.section {
+  &--default-padding {
+    padding: 65px 0;
   }
-  &--padding-top-big{
-    padding: 150px 0 75px;
+  &--padding-top-big {
+    padding: 113px 0 65px;
+  }
+  &--medium-padding {
+    padding: 87px 0 65px;
   }
 
-  &__head{
+  &__head {
     margin-bottom: 120px;
+    &--medium {
+      margin-bottom: 100px;
+    }
   }
 
-  &__title{
+  &__title {
     margin: 0;
     font-weight: 700;
     font-size: var(--font-big);
@@ -19,10 +25,10 @@
     color: var(--chernyy);
   }
 
-  &__footer{
+  &__footer {
     display: flex;
-    margin-top: 80px;
-    &--flex-end{
+    margin-top: 4.625rem;
+    &--flex-end {
       justify-content: flex-end;
     }
   }

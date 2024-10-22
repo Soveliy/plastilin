@@ -1,16 +1,19 @@
-.social{
-  &__list{
-    @include flex-all-sb
+.social {
+  &__list {
+    @include flex-all-sb;
+    gap: 20px;
   }
 
-  &__item + &__item{
-    margin-left: 40px;
-  }
-
-  &__link{
-    svg{
+  &__link {
+    svg {
       height: 30px;
       width: 30px;
+    }
+
+    &--white {
+      svg {
+        fill: #fff;
+      }
     }
   }
 }
