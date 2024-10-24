@@ -1,7 +1,10 @@
 .social {
   &__list {
-    @include flex-all-sb;
+    display: flex;
     gap: 20px;
+    &--big-gap {
+      gap: 40px;
+    }
   }
 
   &__link {
@@ -13,6 +16,11 @@
     &--white {
       svg {
         fill: #fff;
+      }
+    }
+    &--grey {
+      svg {
+        fill: rgba(#fff, 0.4);
       }
     }
   }

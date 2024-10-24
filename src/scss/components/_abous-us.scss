@@ -1,27 +1,31 @@
-.about-us{
-  &__grid{
+.about-us {
+  &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-top: -0.625rem;
+    gap: 7.5rem;
   }
-  &-item{
+  &-item {
     display: flex;
     align-items: flex-end;
-    gap: 30px;
-    &__value{
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--polosy);
+    justify-content: space-between;
+    &__value {
+      margin-right: 30px;
       font-weight: 700;
       font-size: var(--font-big);
       line-height: 1;
       letter-spacing: -0.03em;
       color: var(--oranzhevyy);
     }
-    &__name{
+    &__name {
       margin-bottom: 7px;
       line-height: 125%;
       letter-spacing: -0.03em;
     }
   }
-  &__content-block{
-    margin-top: 5rem;
+  &__content-block {
+    margin-top: 4.3rem;
   }
-
 }

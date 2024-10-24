@@ -1,67 +1,76 @@
-.footer{
+.footer {
   padding: 5rem 0 2.5rem;
   background: var(--chernyy);
-  &__head{
+  &__head {
     max-width: 423px;
+    margin-top: -8px;
   }
-  &__contacts{
-    max-width: 244px;
+  &__contacts {
+    max-width: 259px;
+    flex-shrink: 0;
   }
-  &__row{
+  &__row {
     display: flex;
     justify-content: space-between;
     gap: 2.5rem;
+    padding-right: 9.7%;
+    box-sizing: border-box;
   }
-  &__title{
+  &__menus {
+    display: flex;
+    gap: 40px;
+  }
+  &__title {
     margin-top: 0;
-    margin-bottom: 3.75rem;
+    margin-bottom: 3.05rem;
     font-weight: 700;
     font-size: var(--font-medium-xl);
     line-height: 130%;
     text-transform: uppercase;
     color: var(--belyy);
   }
-  &__social{
+  &__social {
     margin-top: 3.75rem;
   }
-  &__menu-title{
+  &__menu-title {
     margin-top: 0;
     margin-bottom: 1.88rem;
     color: var(--belyy);
   }
-  &__item + &__item{
+  &__item + &__item {
     margin-top: 1.25rem;
   }
-  &__link{
+  &__link {
     font-size: var(--font-lit);
     line-height: 110%;
     color: var(--belyyWithOpacity);
-    &--medium{
+    &--medium {
       font-size: var(--font-default);
       color: var(--belyy);
       font-weight: 500;
     }
-
   }
-
-
 }
 
-.contacts{
-  &__link{
+.contacts {
+  &__link {
     font-size: var(--font-medium);
     line-height: 110%;
     letter-spacing: -0.03em;
     color: var(--belyy);
+
+    &--primary {
+      color: var(--oranzhevyy);
+    }
   }
-  &__label{
-    margin-top: 1.25rem;
+  &__label {
+    margin-top: 0.45rem;
     font-size: var(--font-lit);
     line-height: 130%;
     color: var(--belyy);
   }
 
-  &__item + &__item{
-    margin-top: 3.75rem;
+  &__item + &__item {
+    margin-top: 3.25rem;
   }
 }
