@@ -9,7 +9,9 @@
   border-radius: 5rem;
   cursor: pointer;
   transition: 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-
+  @include only-desktop() {
+    border-radius: vw(80);
+  }
   &--default {
     color: var(--belyy);
     background: var(--oranzhevyy);
@@ -22,30 +24,48 @@
   }
   &--font-lit {
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: var(--font-default);
     line-height: 110%;
+    @include only-desktop() {
+      font-size: vw(18);
+    }
   }
 
   &--font-big {
     line-height: 150%;
     letter-spacing: -0.03em;
     font-size: var(--font-medium);
+    @include only-desktop() {
+      font-size: vw(28);
+    }
   }
 
   &--size-default {
     padding: 0.6875rem 1.25rem;
+    @include only-desktop() {
+      padding: vw(11) vw(20);
+    }
   }
 
   &--size-big {
     padding: 1.3125rem 5rem;
+    @include only-desktop() {
+      padding: vw(21) vw(80);
+    }
   }
 
   &__arrow-right {
-    width: 22px;
-    height: 15px;
+    width: 1.375rem;
+    height: 0.9375rem;
     margin-left: 1.25rem;
     stroke-width: 0.125rem;
     stroke: var(--belyy);
+
+    @include only-desktop() {
+      width: vw(22);
+      height: vw(15);
+      margin-left: vw(20);
+    }
   }
   &:disabled {
     pointer-events: none;

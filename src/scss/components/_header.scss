@@ -1,6 +1,9 @@
 .header {
   padding: 3.3125rem 0 1.375rem;
   border-bottom: 1px solid var(--polosy);
+  @include only-desktop {
+    padding: vw(53) 0 vw(22);
+  }
   &__row {
     @include flex-all-sb();
   }
@@ -8,8 +11,24 @@
   &__right-side {
     @include flex-all-sb();
     gap: 1.875rem;
+    @include only-desktop() {
+      gap: vw(30);
+    }
+    @include tablet() {
+      margin-left: auto;
+    }
+    @include small-tablet {
+      display: none;
+    }
   }
 
+  &__burger {
+    display: none;
+    @include tablet() {
+      display: block;
+      margin-left: 1rem;
+    }
+  }
   &__phone {
     height: 2rem;
     overflow: hidden;
@@ -18,20 +37,33 @@
     line-height: 110%;
     letter-spacing: -0.03em;
     color: var(--chernyy);
+    @include only-desktop() {
+      font-size: vw(28);
+      height: vw(32);
+    }
     @include hover {
       &:hover {
         span {
           transform: translateY(-2rem);
         }
       }
-    }
-    span {
-      display: block;
-      transition: 0.4s;
-      &::after {
+      span {
         display: block;
-        content: attr(data-hover);
+        transition: 0.4s;
+        &::after {
+          display: block;
+          content: attr(data-hover);
+        }
       }
+    }
+    @include tablet() {
+      height: auto;
+    }
+  }
+
+  &__main-menu {
+    @include tablet {
+      display: none;
     }
   }
 }

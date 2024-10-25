@@ -3,6 +3,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.75rem 5rem;
+
+    @include only-desktop() {
+      gap: vw(76) vw(80);
+    }
+    @include tablet() {
+      gap: 2.75rem 3rem;
+    }
+    @include small-tablet {
+      display: flex;
+      gap: 0;
+    }
   }
 
   &-item {
@@ -14,6 +25,15 @@
       overflow: hidden;
       margin-bottom: 1.875rem;
       border-radius: 1.25rem;
+
+      @include only-desktop() {
+        margin-bottom: vw(30);
+        border-radius: vw(20);
+      }
+      @include small-tablet {
+        margin-bottom: 1rem;
+        border-radius: 0.625rem;
+      }
     }
 
     &__picture {
@@ -34,6 +54,9 @@
 
     &__tegs {
       margin-top: 0.75rem;
+      @include only-desktop() {
+        margin-top: vw(12);
+      }
     }
   }
 }

@@ -3,10 +3,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8.625rem 7.5rem;
+    @include only-desktop() {
+      gap: vw(138) vw(120);
+    }
+    @include tablet() {
+      gap: 2.5rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include small-tablet {
+      display: flex;
+      gap: 0;
+      .swiper-slide {
+        height: auto;
+      }
+    }
   }
   &-item {
     position: relative;
     padding: 0.25rem 0 2.5rem;
+    height: 100%;
+    @include only-desktop() {
+      padding: vw(4) 0 vw(40);
+    }
     &::before {
       content: "";
       position: absolute;
@@ -45,12 +63,22 @@
       text-transform: uppercase;
       color: var(--chernyy);
       transition: 0.4s;
+
+      @include only-desktop() {
+        font-size: vw(40);
+      }
     }
     &__desc {
       max-width: 88%;
       margin-top: 1.25rem;
       line-height: 125%;
       transition: 0.4s;
+      @include only-desktop() {
+        margin-top: vw(20);
+      }
+      @include tablet() {
+        margin-top: 1rem;
+      }
     }
   }
 }

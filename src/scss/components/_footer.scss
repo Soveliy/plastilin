@@ -1,9 +1,16 @@
 .footer {
   padding: 5rem 0 2.5rem;
   background: var(--chernyy);
+  @include tablet {
+    padding: 2.5rem 0;
+  }
   &__head {
     max-width: 423px;
     margin-top: -8px;
+    @include tablet {
+      max-width: 100%;
+      margin-top: 0;
+    }
   }
   &__contacts {
     max-width: 259px;
@@ -15,6 +22,10 @@
     gap: 2.5rem;
     padding-right: 9.7%;
     box-sizing: border-box;
+    @include tablet {
+      flex-direction: column;
+      padding-right: 0;
+    }
   }
   &__menus {
     display: flex;
@@ -28,9 +39,15 @@
     line-height: 130%;
     text-transform: uppercase;
     color: var(--belyy);
+    @include tablet {
+      margin-bottom: 2rem;
+    }
   }
   &__social {
     margin-top: 3.75rem;
+    @include tablet {
+      margin-top: 2rem;
+    }
   }
   &__menu-title {
     margin-top: 0;

@@ -10,24 +10,42 @@
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-	--siniy: #1b3990;
-	--chernyy: #181818;
-	--oranzhevyy: #e55030;
-	--osnovnoy-tekst: rgba(24, 24, 24, 0.8);
-	--polosy: #c7c7c7;
-	--malenkiy-zagolovok: #9b9b9b;
-	--chernye-polosy: #4f4f4f;
-	--seryy-fon-menyu: #eff2fa;
-	--belyy: #fff;
-  --belyyWithOpacity: rgba(255,255,255,.7);
-
+  --siniy: #1b3990;
+  --chernyy: #181818;
+  --oranzhevyy: #e55030;
+  --osnovnoy-tekst: rgba(24, 24, 24, 0.8);
+  --polosy: #c7c7c7;
+  --malenkiy-zagolovok: #9b9b9b;
+  --chernye-polosy: #4f4f4f;
+  --seryy-fon-menyu: #eff2fa;
+  --belyy: #fff;
+  --belyyWithOpacity: rgba(255, 255, 255, 0.7);
 
   // font-size
 
   --font-lit: 1rem;
   --font-default: 1.125rem; // 18px
   --font-medium: 1.75rem; // 28px
-  --font-medium-xl:2.5rem; // 40px
+  --font-medium-xl: 2.5rem; // 40px
   --font-big: 4.375rem; // 70px
-
 }
+
+@media (max-width: 1024px) {
+  :root {
+    --font-lit: 0.875rem; // 14px
+    --font-default: 1rem; // 16px
+    --font-medium: 1.5rem; // 24px
+    --font-medium-xl: 2rem; // 32px
+    --font-big: 3.375rem; // 54px
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-medium: 1.25rem; // 20
+    --font-medium-xl: 1.5rem; // 24
+    --font-big: 2.25rem; // 36
+  }
+}
+
+$resolution: 1920;

@@ -3,20 +3,43 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
+    @include only-desktop() {
+      gap: vw(80);
+    }
+    @include small-tablet {
+      display: flex;
+      gap: 0;
+      .swiper-slide {
+        height: auto;
+      }
+    }
   }
 }
 
 .price-card {
   display: flex;
   flex-direction: column;
-  padding: 35px;
+  padding: 2.1875rem;
   box-sizing: border-box;
   border: 1px solid var(--polosy);
   border-radius: 10px;
+  height: 100%;
+  @include only-desktop() {
+    padding: vw(35);
+  }
+  @include small-tablet {
+    padding: 2rem 1rem;
+  }
 
   &__header {
     @include flex-all-sb;
     margin-bottom: 3rem;
+    @include only-desktop() {
+      margin-bottom: vw(48);
+    }
+    @include tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   &__name {
@@ -26,21 +49,33 @@
     line-height: 120%;
     letter-spacing: -0.03em;
     color: var(--chernyy);
+    @include only-desktop() {
+      font-size: vw(18);
+    }
   }
 
   &__button {
-    padding: 11px 20px;
+    padding: 0.6875rem 1.25rem;
     box-sizing: border-box;
     background-color: var(--chernyy);
-    border-radius: 20px;
+    border-radius: 1.25rem;
+
+    @include only-desktop() {
+      padding: vw(11) vw(20);
+      border-radius: vw(20);
+    }
   }
 
   &__icon {
-    width: 20px;
-    height: 13px;
+    width: 1.25rem;
+    height: 0.8125rem;
     line-height: 0;
     stroke-width: 2px;
     stroke: var(--belyy);
+    @include only-desktop() {
+      width: vw(20);
+      height: vw(13);
+    }
   }
 
   &__default {
@@ -49,22 +84,45 @@
     line-height: 128%;
     color: var(--oranzhevyy);
 
+    @include only-desktop() {
+      font-size: vw(28);
+    }
     span {
       font-size: var(--font-big);
     }
   }
   &__symbol {
-    margin-left: 10px;
+    margin-left: 0.625rem;
+    @include only-desktop() {
+      margin-left: vw(10);
+    }
   }
   &__list {
     margin-top: 4.6rem;
+    @include only-desktop() {
+      margin-top: vw(74);
+    }
+    @include small-tablet {
+      margin-top: 2rem;
+    }
   }
 
   &__item {
     @include flex-all-sb;
     letter-spacing: -0.03em;
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
     & + & {
       margin-top: 1.25rem;
+      @include only-desktop() {
+        margin-top: vw(20);
+      }
+      @include tablet {
+        margin-top: 1rem;
+      }
     }
     &-value {
       font-weight: 700;

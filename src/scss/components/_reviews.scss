@@ -4,6 +4,9 @@
     padding: 3.88rem 0 2.1rem;
     border-bottom: 1px solid var(--polosy);
     box-sizing: border-box;
+    @include only-desktop() {
+      padding: vw(62) 0 vw(34);
+    }
     &__desc {
       line-height: 150%;
       letter-spacing: -0.03em;
@@ -11,6 +14,9 @@
     &__bottom {
       @include flex-all-sb;
       margin-top: 2.5rem;
+      @include only-desktop() {
+        margin-top: vw(40);
+      }
     }
 
     &__client {
@@ -22,7 +28,14 @@
     }
     &__avatar {
       flex-shrink: 0;
-      margin-right: 15px;
+      margin-right: 0.9375rem;
+      height: 4.125rem;
+      width: 4.125rem;
+      @include only-desktop() {
+        margin-right: vw(15);
+        height: vw(66);
+        width: vw(66);
+      }
     }
 
     &__client-name {
@@ -35,9 +48,14 @@
       position: absolute;
       top: 0;
       left: 0;
-      height: 22px;
-      width: 28px;
+      height: 1.375rem;
+      width: 1.75rem;
       background: url(../../img/quote.svg) no-repeat center center;
+
+      @include only-desktop() {
+        height: vw(22);
+        width: vw(28);
+      }
     }
   }
 }

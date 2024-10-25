@@ -2,21 +2,30 @@
   &__row {
     @include flex;
     justify-content: space-between;
+    @include tablet() {
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin: 0;
     font-weight: 700;
-    font-size: 70px;
+    font-size: var(--font-big);
     line-height: 128%;
     text-transform: uppercase;
     color: var(--chernyy);
+    @include only-desktop() {
+      font-size: vw(70);
+    }
   }
   &__left {
     // max-width: 47.9375rem;
   }
   &__tegs {
     margin-top: 1.0625rem;
+    @include only-desktop() {
+      margin-top: vw(17);
+    }
   }
   &__right {
     padding-top: 0.75rem;
@@ -24,10 +33,27 @@
     margin-left: 1rem;
     width: 100%;
     line-height: 150%;
+
+    @include only-desktop() {
+      padding-top: vw(12);
+      max-width: vw(846);
+      margin-left: vw(16);
+    }
+    @include tablet() {
+      margin-top: 2rem;
+      margin-left: 0;
+      padding-top: 0;
+    }
   }
 
   &__button {
     margin-top: 3.4375rem;
+    @include only-desktop() {
+      margin-top: vw(55);
+    }
+    @include tablet() {
+      margin-top: 2rem;
+    }
   }
 
   b,

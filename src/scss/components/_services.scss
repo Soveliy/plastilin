@@ -1,9 +1,28 @@
 .services {
+  &__slider {
+    margin-top: -4.5625rem;
+
+    @include only-desktop() {
+      margin-top: -vw(73);
+    }
+  }
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 7.5rem;
-    margin-top: -4.5625rem;
+    @include only-desktop() {
+      gap: 0 vw(120);
+    }
+    @include tablet() {
+      gap: 0 3rem;
+    }
+    @include small-tablet {
+      display: flex;
+      gap: 0;
+      .swiper-slide {
+        height: auto;
+      }
+    }
   }
 
   &-item {
@@ -13,7 +32,19 @@
     gap: 4.375rem;
     padding: 4.5625rem 0;
     box-sizing: border-box;
-
+    @include only-desktop() {
+      gap: vw(70);
+      padding: vw(73) 0;
+    }
+    @include tablet() {
+      padding: 2rem 0;
+      gap: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include small-tablet {
+      height: 100%;
+    }
     @include hover {
       .services-item__title,
       .services-item__desc {
@@ -58,6 +89,10 @@
       line-height: 1;
       color: var(--chernyy);
       transition: 0.4s;
+      @include only-desktop() {
+        max-width: vw(312);
+        font-size: vw(28);
+      }
     }
 
     &__desc {
@@ -65,6 +100,9 @@
       line-height: 150%;
       color: var(--osnovnoy-tekst);
       transition: 0.4s;
+      @include only-desktop() {
+        max-width: vw(444);
+      }
     }
 
     &__icon {
@@ -78,6 +116,10 @@
       stroke: var(--oranzhevyy);
       opacity: 0;
       transition: 0.4s;
+      @include only-desktop() {
+        width: vw(20);
+        height: vw(13);
+      }
     }
   }
 }

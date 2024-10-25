@@ -1,9 +1,15 @@
 .social {
   &__list {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
+    @include only-desktop() {
+      gap: vw(20);
+    }
     &--big-gap {
-      gap: 40px;
+      gap: 2.5rem;
+      @include only-desktop() {
+        gap: vw(40);
+      }
     }
   }
 
@@ -11,6 +17,10 @@
     svg {
       height: 30px;
       width: 30px;
+      @include only-desktop() {
+        height: vw(30);
+        width: vw(30);
+      }
     }
 
     &--white {

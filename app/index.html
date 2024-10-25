@@ -65,10 +65,14 @@
           Начать проект
         </button>
       </div>
+      <div class="header__burger burger">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
     </div>
   </div>
 </header>
-
     <main class="main" data-barba="container" data-barba-namespace="home">
       <div class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
         <div class="container">
@@ -140,64 +144,80 @@
       </div>
       <div class="services section section--padding-top-big">
         <div class="container">
-          <div class="services__grid">
-            <a class="services-item" href="#">
-              <div class="services-item__title">Интернет-магазины</div>
-              <div class="services-item__desc">
-                от простых лендингов до сложных маркетплейсов с интеграцией
-                платежных систем
+          <div class="swiper services__slider">
+            <div class="services__grid swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">Интернет-магазины</div>
+                  <div class="services-item__desc">
+                    от простых лендингов до сложных маркетплейсов с интеграцией
+                    платежных систем
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-            <a class="services-item" href="#">
-              <div class="services-item__title">Корпоративные сайты</div>
-              <div class="services-item__desc">
-                веб-ресурс для представительства компании, информационные
-                порталы, каталоги продукции
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">Корпоративные сайты</div>
+                  <div class="services-item__desc">
+                    веб-ресурс для представительства компании, информационные
+                    порталы, каталоги продукции
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-            <a class="services-item" href="#">
-              <div class="services-item__title">Лендинги</div>
-              <div class="services-item__desc">
-                страницы, направленные на продажи, повышение конверсии
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">Лендинги</div>
+                  <div class="services-item__desc">
+                    страницы, направленные на продажи, повышение конверсии
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-            <a class="services-item" href="#">
-              <div class="services-item__title">Промо-сайты</div>
-              <div class="services-item__desc">
-                посвященные конкретному продукту или проводимой акции
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">Промо-сайты</div>
+                  <div class="services-item__desc">
+                    посвященные конкретному продукту или проводимой акции
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-            <a class="services-item" href="#">
-              <div class="services-item__title">Сайты-визитки</div>
-              <div class="services-item__desc">
-                лаконичные страницы с информацией для небольших предприятий
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">Сайты-визитки</div>
+                  <div class="services-item__desc">
+                    лаконичные страницы с информацией для небольших предприятий
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-            <a class="services-item" href="#">
-              <div class="services-item__title">И многое другое</div>
-              <div class="services-item__desc">
-                разработаем сайт под ключ любой бизнес-тематики
+              <div class="swiper-slide">
+                <a class="services-item" href="#">
+                  <div class="services-item__title">И многое другое</div>
+                  <div class="services-item__desc">
+                    разработаем сайт под ключ любой бизнес-тематики
+                  </div>
+                  <svg class="services-item__icon">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
               </div>
-              <svg class="services-item__icon">
-                <use xlink:href="img/sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
+
+            </div>
           </div>
+
         </div>
       </div>
       <section class="advantages section section--default-padding">
@@ -205,48 +225,64 @@
           <div class="section__head">
             <h2 class="section__title">Преимущества</h2>
           </div>
-          <div class="advantages__grid">
-            <div class="advantages-item">
-              <div class="advantages-item__title">Опытный коллектив</div>
-              <div class="advantages-item__desc">
-                В нашей команде только профессионалы с многолетним опытом
-                веб-разработки
+          <div class="advantages__slider">
+            <div class="advantages__grid swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Опытный коллектив</div>
+                  <div class="advantages-item__desc">
+                    В нашей команде только профессионалы с многолетним опытом
+                    веб-разработки
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="advantages-item">
-              <div class="advantages-item__title">Индивидуальный подход</div>
-              <div class="advantages-item__desc">
-                Каждый проект уникален, мы учитываем все требования
-                и пожелания
+              <div class="swiper-slide">
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Индивидуальный подход</div>
+                  <div class="advantages-item__desc">
+                    Каждый проект уникален, мы учитываем все требования
+                    и пожелания
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="advantages-item">
-              <div class="advantages-item__title">Поддержка, продвижение</div>
-              <div class="advantages-item__desc">
-                Не просто создаем сайты, а помогаем им успешно развиваться в
-                сети
+              <div class="swiper-slide">
+
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Поддержка, продвижение</div>
+                  <div class="advantages-item__desc">
+                    Не просто создаем сайты, а помогаем им успешно развиваться в
+                    сети
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="advantages-item">
-              <div class="advantages-item__title">Сжатые сроки</div>
-              <div class="advantages-item__desc">
-                Мы работаем оперативно, чтобы вы получили свой сайт
-                в кратчайшие сроки
+              <div class="swiper-slide">
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Сжатые сроки</div>
+                  <div class="advantages-item__desc">
+                    Мы работаем оперативно, чтобы вы получили свой сайт
+                    в кратчайшие сроки
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="advantages-item">
-              <div class="advantages-item__title">Комплексный подход</div>
-              <div class="advantages-item__desc">
-                Мы предлагаем не только разработку сайтов, но и их последующее
-                продвижение
+              <div class="swiper-slide">
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Комплексный подход</div>
+                  <div class="advantages-item__desc">
+                    Мы предлагаем не только разработку сайтов, но и их последующее
+                    продвижение
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="advantages-item">
-              <div class="advantages-item__title">Доступные цены</div>
-              <div class="advantages-item__desc">
-                Мы предлагаем разумные цены как для типовых,
-                так и для уникальных проектов
+              <div class="swiper-slide">
+                <div class="advantages-item">
+                  <div class="advantages-item__title">Доступные цены</div>
+                  <div class="advantages-item__desc">
+                    Мы предлагаем разумные цены как для типовых,
+                    так и для уникальных проектов
+                  </div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -256,26 +292,43 @@
           <div class="section__head section__head--medium">
             <h2 class="section__title">Наши клиенты</h2>
           </div>
-          <div class="our-clients__grid">
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/1.jpg" alt="" />
-            </a>
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/2.png" alt="" />
-            </a>
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/3.png" alt="" />
-            </a>
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/1.jpg" alt="" />
-            </a>
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/2.png" alt="" />
-            </a>
-            <a href="#" class="our-clients-item">
-              <img src="img/clients/3.png" alt="" />
-            </a>
+          <div class="our-clients__slider">
+            <div class="our-clients__grid swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/3.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/2.png" alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+
+                <a href="#" class="our-clients-item">
+                  <img src="img/clients/3.png" alt="" />
+                </a>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </section>
 
@@ -284,88 +337,91 @@
           <div class="section__head section__head--medium">
             <h2 class="section__title">Портфолио</h2>
           </div>
-          <div class="portfolio__grid">
-            <div class="portfolio-item">
-              <a class="portfolio-item__image-container" href="#">
-                <picture class="portfolio-item__picture">
-                  <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
-                </picture>
-              </a>
-              <a class="portfolio-item__name" href="#">
-                СММ для студии Пластилин Арт
-              </a>
-              <div class="portfolio-item__tegs tegs">
-                <ul class="tegs__list list-reset">
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
-                  </li>
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#SMM</a>
-                  </li>
-                </ul>
+          <div class="portfolio__slider">
+            <div class="portfolio__grid swiper-wrapper">
+              <div class="swiper-slide portfolio-item">
+                <a class="portfolio-item__image-container" href="#">
+                  <picture class="portfolio-item__picture">
+                    <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
+                  </picture>
+                </a>
+                <a class="portfolio-item__name" href="#">
+                  СММ для студии Пластилин Арт
+                </a>
+                <div class="portfolio-item__tegs tegs">
+                  <ul class="tegs__list list-reset">
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
+                    </li>
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#SMM</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="portfolio-item">
-              <a class="portfolio-item__image-container" href="#">
-                <picture class="portfolio-item__picture">
-                  <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
-                </picture>
-              </a>
-              <a class="portfolio-item__name" href="#">
-                СММ для студии Пластилин Арт
-              </a>
-              <div class="portfolio-item__tegs tegs">
-                <ul class="tegs__list list-reset">
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
-                  </li>
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#SMM</a>
-                  </li>
-                </ul>
+              <div class="swiper-slide portfolio-item">
+                <a class="portfolio-item__image-container" href="#">
+                  <picture class="portfolio-item__picture">
+                    <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
+                  </picture>
+                </a>
+                <a class="portfolio-item__name" href="#">
+                  СММ для студии Пластилин Арт
+                </a>
+                <div class="portfolio-item__tegs tegs">
+                  <ul class="tegs__list list-reset">
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
+                    </li>
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#SMM</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="portfolio-item">
-              <a class="portfolio-item__image-container" href="#">
-                <picture class="portfolio-item__picture">
-                  <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
-                </picture>
-              </a>
-              <a class="portfolio-item__name" href="#">
-                СММ для студии Пластилин Арт
-              </a>
-              <div class="portfolio-item__tegs tegs">
-                <ul class="tegs__list list-reset">
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
-                  </li>
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#SMM</a>
-                  </li>
-                </ul>
+              <div class="swiper-slide portfolio-item">
+                <a class="portfolio-item__image-container" href="#">
+                  <picture class="portfolio-item__picture">
+                    <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
+                  </picture>
+                </a>
+                <a class="portfolio-item__name" href="#">
+                  СММ для студии Пластилин Арт
+                </a>
+                <div class="portfolio-item__tegs tegs">
+                  <ul class="tegs__list list-reset">
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
+                    </li>
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#SMM</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="portfolio-item">
-              <a class="portfolio-item__image-container" href="#">
-                <picture class="portfolio-item__picture">
-                  <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
-                </picture>
-              </a>
-              <a class="portfolio-item__name" href="#">
-                СММ для студии Пластилин Арт
-              </a>
-              <div class="portfolio-item__tegs tegs">
-                <ul class="tegs__list list-reset">
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
-                  </li>
-                  <li class="tegs__item">
-                    <a href="#" class="tegs__link tegs__link--default">#SMM</a>
-                  </li>
-                </ul>
+              <div class="swiper-slide portfolio-item">
+                <a class="portfolio-item__image-container" href="#">
+                  <picture class="portfolio-item__picture">
+                    <img src="img/portfolio/1.jpg" width="846" height="620" alt="" />
+                  </picture>
+                </a>
+                <a class="portfolio-item__name" href="#">
+                  СММ для студии Пластилин Арт
+                </a>
+                <div class="portfolio-item__tegs tegs">
+                  <ul class="tegs__list list-reset">
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#Продвижение</a>
+                    </li>
+                    <li class="tegs__item">
+                      <a href="#" class="tegs__link tegs__link--default">#SMM</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="section__footer section__footer--flex-end">
             <button class="button button--default button--font-big button--size-big">
               Смотреть больше
@@ -382,92 +438,94 @@
           <div class="section__head section__head--medium">
             <h2 class="section__title">Цены</h2>
           </div>
-          <div class="prices__grid">
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайта-визитки
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+          <div class="prices__slider">
+            <div class="prices__grid swiper-wrapper">
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайта-визитки
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный сайт-визитка</span>
+                    <span class="price-card__item-value">от 60 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный сайт-визитка</span>
+                    <span class="price-card__item-value">от 400 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный сайт-визитка</span>
-                  <span class="price-card__item-value">от 60 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный сайт-визитка</span>
-                  <span class="price-card__item-value">от 400 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание корпоративного сайта под ключ
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание корпоративного сайта под ключ
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 70 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 70 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайтов с уникальным дизайном
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайтов с уникальным дизайном
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Одностраничный лендинг</span>
+                    <span class="price-card__item-value">от 99 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Сайт-каталог</span>
+                    <span class="price-card__item-value">от 600 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Интернет-магазин</span>
+                    <span class="price-card__item-value">от 700 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Одностраничный лендинг</span>
-                  <span class="price-card__item-value">от 99 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Сайт-каталог</span>
-                  <span class="price-card__item-value">от 600 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Интернет-магазин</span>
-                  <span class="price-card__item-value">от 700 000 руб</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -887,181 +945,184 @@
           <div class="section__head section__head--medium">
             <h2 class="section__title">Похожие услуги</h2>
           </div>
-          <div class="prices__grid">
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайта-визитки
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+          <div class="prices__slider">
+            <div class="prices__grid swiper-wrapper">
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайта-визитки
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный сайт-визитка</span>
+                    <span class="price-card__item-value">от 60 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный сайт-визитка</span>
+                    <span class="price-card__item-value">от 400 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный сайт-визитка</span>
-                  <span class="price-card__item-value">от 60 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный сайт-визитка</span>
-                  <span class="price-card__item-value">от 400 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание корпоративного сайта под ключ
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание корпоративного сайта под ключ
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 70 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 70 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайтов с уникальным дизайном
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайтов с уникальным дизайном
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Одностраничный лендинг</span>
+                    <span class="price-card__item-value">от 99 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Сайт-каталог</span>
+                    <span class="price-card__item-value">от 600 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Интернет-магазин</span>
+                    <span class="price-card__item-value">от 700 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Одностраничный лендинг</span>
-                  <span class="price-card__item-value">от 99 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Сайт-каталог</span>
-                  <span class="price-card__item-value">от 600 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Интернет-магазин</span>
-                  <span class="price-card__item-value">от 700 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайта-визитки
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайта-визитки
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">60 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный сайт-визитка</span>
+                    <span class="price-card__item-value">от 60 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный сайт-визитка</span>
+                    <span class="price-card__item-value">от 400 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный сайт-визитка</span>
-                  <span class="price-card__item-value">от 60 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный сайт-визитка</span>
-                  <span class="price-card__item-value">от 400 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание корпоративного сайта под ключ
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание корпоративного сайта под ключ
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
+                  <meta itemprop="priceCurrency" content="RUB" />
                 </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">70 000</span> <span class="price-card__symbol">р</span>
-                <meta itemprop="priceCurrency" content="RUB" />
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 70 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Рисованный корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Шаблонный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 70 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Рисованный корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-              </ul>
-            </div>
-            <div class="price-card" itemscope itemtype="https://schema.org/Service">
-              <a class="price-card__header" href="#" itemprop="url">
-                <h3 class="price-card__name" itemprop="name">
-                  Создание сайтов с уникальным дизайном
-                </h3>
-                <div class="price-card__button">
-                  <svg class="price-card__icon">
-                    <use xlink:href="img/sprite.svg#arrow-right"></use>
-                  </svg>
-                </div>
-              </a>
-              <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
+              <div class="price-card swiper-slide" itemscope itemtype="https://schema.org/Service">
+                <a class="price-card__header" href="#" itemprop="url">
+                  <h3 class="price-card__name" itemprop="name">
+                    Создание сайтов с уникальным дизайном
+                  </h3>
+                  <div class="price-card__button">
+                    <svg class="price-card__icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </div>
+                </a>
+                <div class="price-card__default" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  от <span itemprop="price">500 000</span> <span class="price-card__symbol">р</span>
 
-                <meta itemprop="priceCurrency" content="RUB" />
+                  <meta itemprop="priceCurrency" content="RUB" />
+                </div>
+                <ul class="price-card__list list-reset">
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Одностраничный лендинг</span>
+                    <span class="price-card__item-value">от 99 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Корпоративный сайт</span>
+                    <span class="price-card__item-value">от 500 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Сайт-каталог</span>
+                    <span class="price-card__item-value">от 600 000 руб</span>
+                  </li>
+                  <li class="price-card__item">
+                    <span class="price-card__item-name">Интернет-магазин</span>
+                    <span class="price-card__item-value">от 700 000 руб</span>
+                  </li>
+                </ul>
               </div>
-              <ul class="price-card__list list-reset">
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Одностраничный лендинг</span>
-                  <span class="price-card__item-value">от 99 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Корпоративный сайт</span>
-                  <span class="price-card__item-value">от 500 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Сайт-каталог</span>
-                  <span class="price-card__item-value">от 600 000 руб</span>
-                </li>
-                <li class="price-card__item">
-                  <span class="price-card__item-name">Интернет-магазин</span>
-                  <span class="price-card__item-value">от 700 000 руб</span>
-                </li>
-              </ul>
             </div>
           </div>
+
         </div>
       </section>
     </main>

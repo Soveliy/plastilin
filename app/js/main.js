@@ -6309,10 +6309,110 @@ __webpack_require__.r(__webpack_exports__);
 
 
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_1__.Pagination]);
-const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.reviews__slider', {
-  slidesPerView: 3,
-  spaceBetween: 80
+const reviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews__slider", {
+  slidesPerView: 1.2,
+  spaceBetween: 32,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 80
+    }
+  }
 });
+const clients = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".our-clients__slider", {
+  spaceBetween: 0,
+  breakpoints: {
+    576: {
+      slidesPerView: 2.2
+    },
+    1024: {
+      slidesPerView: 4
+    },
+    1400: {
+      slidesPerView: 5
+    },
+    1600: {
+      slidesPerView: 6
+    }
+  }
+});
+var init = false;
+const swipers = [];
+function initMobileSliders() {
+  if (window.innerWidth <= 768) {
+    if (!init) {
+      init = true;
+      const services = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".services__slider", {
+        slidesPerView: 1.2,
+        spaceBetween: 32,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.2
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 80
+          }
+        }
+      });
+      swipers.push(services);
+      const advantagesSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".advantages__slider", {
+        slidesPerView: 1.2,
+        spaceBetween: 32,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.2
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 80
+          }
+        }
+      });
+      swipers.push(advantagesSlider);
+      const portfolioSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".portfolio__slider", {
+        slidesPerView: 1.2,
+        spaceBetween: 32,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.2
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 80
+          }
+        }
+      });
+      swipers.push(portfolioSlider);
+      const pricesSliders = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".prices__slider", {
+        slidesPerView: 1.2,
+        spaceBetween: 32,
+        breakpoints: {
+          576: {
+            slidesPerView: 2.2
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 80
+          }
+        }
+      });
+      pricesSliders.forEach(item => {
+        swipers.push(item);
+      });
+    }
+  } else if (init) {
+    swipers.forEach(item => {
+      item.destroy();
+    });
+    init = false;
+  }
+}
+initMobileSliders();
+window.addEventListener("resize", initMobileSliders);
 
 /***/ }),
 

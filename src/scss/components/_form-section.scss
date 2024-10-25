@@ -1,12 +1,25 @@
 .form-section {
   &__row {
     @include flex-v-center;
-    gap: 120px;
+    gap: 7.5rem;
+    @include only-desktop() {
+      gap: vw(120);
+    }
+    @include tablet() {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
   &__info-section {
-    max-width: 714px;
+    max-width: 44.625rem;
     width: 100%;
     flex-shrink: 0;
+    @include only-desktop() {
+      max-width: vw(714);
+    }
+    @include tablet() {
+      max-width: 100%;
+    }
   }
   &__form {
     // margin-top: -1.25rem;
@@ -14,17 +27,29 @@
   }
 }
 .info-section {
-  padding: 1.88rem 2.5rem 95px;
+  padding: 1.875rem 2.5rem 5.9375rem;
   box-sizing: border-box;
   background: var(--oranzhevyy);
   border-radius: 1.25rem;
+  @include only-desktop() {
+    padding: vw(30) vw(40) vw(95);
+    border-radius: vw(20);
+  }
+  @include tablet() {
+    padding: 2.5rem 1.5rem;
+  }
   &__title {
     margin: 0 0 1.15rem;
     font-weight: 700;
-    font-size: 70px;
+    font-size: var(--font-big);
     line-height: 115%;
     text-transform: uppercase;
     color: var(--belyy);
+
+    @include only-desktop() {
+      margin: 0 0 vw(18);
+      font-size: vw(70);
+    }
     span {
       display: block;
       color: var(--chernyy);
@@ -40,15 +65,29 @@
     @include flex;
     gap: 4.1rem;
     margin-top: 2.5rem;
+    @include only-desktop() {
+      gap: vw(65);
+      margin-top: vw(40);
+    }
+    @include mobile {
+      gap: 1rem;
+      flex-direction: column;
+    }
   }
   &__label {
     line-height: 130%;
     letter-spacing: -0.03em;
     color: var(--belyy);
     margin-bottom: 0.1875rem;
+    @include only-desktop() {
+      margin-bottom: vw(3);
+    }
   }
   &__social {
     margin-top: 0.5rem;
+    @include only-desktop() {
+      margin-top: vw(8);
+    }
   }
   &__link {
     font-weight: 700;
@@ -56,5 +95,8 @@
     line-height: 130%;
     letter-spacing: -0.03em;
     color: var(--belyy);
+    @include only-desktop() {
+      font-size: vw(28);
+    }
   }
 }

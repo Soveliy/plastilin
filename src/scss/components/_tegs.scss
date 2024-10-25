@@ -1,9 +1,21 @@
 .tegs {
   &__list {
     @include flex;
+    @include small-tablet {
+      white-space: nowrap;
+      overflow: auto;
+      margin: 0 -0.9375rem;
+      padding: 0 0.9375rem;
+    }
   }
   &__item + &__item {
-    margin-left: 30px;
+    margin-left: 1.875rem;
+    @include only-desktop() {
+      margin-left: vw(30);
+    }
+    @include small-tablet {
+      margin-left: 1rem;
+    }
   }
   &__link {
     line-height: 110%;
@@ -13,11 +25,18 @@
 
     &--lit {
       font-size: var(--font-lit);
+
+      @include only-desktop() {
+        font-size: vw(16);
+      }
     }
 
     &--default {
       font-size: var(--default);
       letter-spacing: -0.03em;
+      @include only-desktop() {
+        font-size: vw(18);
+      }
     }
   }
 }

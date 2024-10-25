@@ -1,10 +1,23 @@
 .faq-item {
   border-bottom: 1px solid var(--polosy);
   &:first-child {
-    padding-bottom: 4.8rem;
+    padding-bottom: 4.75rem;
+    @include only-desktop() {
+      padding-bottom: vw(76);
+    }
+    @include tablet {
+      padding-bottom: 2.5rem;
+    }
   }
   &:not(:first-child) {
-    padding: 4.7rem 0 4.5rem;
+    padding: 4.6875rem 0 4.5rem;
+
+    @include only-desktop() {
+      padding: vw(75) 0 (72);
+    }
+    @include tablet {
+      padding: 2.6875rem 0 2.5rem;
+    }
   }
   &__head {
     display: flex;
@@ -16,6 +29,9 @@
     letter-spacing: -0.03em;
     color: var(--osnovnoy-tekst);
     cursor: pointer;
+    @include only-desktop() {
+      font-size: vw(28);
+    }
   }
   &__body {
     box-sizing: border-box;
@@ -40,6 +56,11 @@
     height: 28px;
     margin-left: 30px;
     transition: 0.4s;
+    @include only-desktop() {
+      height: vw(28);
+      width: vw(28);
+      margin-left: vw(30);
+    }
     path {
       stroke-width: 2px;
       fill: var(--chernyy);
@@ -50,6 +71,9 @@
       padding-top: 2.5rem;
       max-height: 62.5rem;
       opacity: 1;
+      @include only-desktop() {
+        padding-top: vw(40);
+      }
     }
     .faq-item__icon {
       transform: rotate(45deg);

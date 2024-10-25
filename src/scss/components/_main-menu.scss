@@ -1,54 +1,62 @@
-.main-menu{
-  &__list{
+.main-menu {
+  &__list {
     @include flex;
-    gap: 60px;
+    gap: 3.75rem;
+    @include only-desktop() {
+      gap: vw(60);
+    }
   }
-  &__link{
+  &__link {
     position: relative;
     display: block;
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--font-default);
     line-height: 110%;
     color: var(--chernyy);
     transition: 0.3s;
-
-    &:before,&:after{
-      content: '';
+    @include only-desktop() {
+      font-size: vw(18);
+    }
+    &:before,
+    &:after {
+      content: "";
       position: absolute;
       width: 0%;
-      height: 2px;
+      height: 0.125rem;
       top: 100%;
-      margin-top: 5px;
+      margin-top: 0.3125rem;
       background: var(--oranzhevyy);
+      @include only-desktop() {
+        margin-top: vw(5);
+      }
     }
 
-    &:before{
+    &:before {
       left: 0;
     }
 
-    &:after{
+    &:after {
       right: 0;
       transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
-    @include hover{
-      &:before{
+    @include hover {
+      &:before {
         width: 100%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
       }
-      &:after{
+      &:after {
         background: transparent;
         width: 100%;
         transition: 0s;
       }
     }
 
-    &:active{
-      &::before{
+    &:active {
+      &::before {
         background-color: var(--siniy);
         z-index: 10;
       }
     }
-
   }
 }

@@ -1,13 +1,16 @@
-.content-block{
-  > *:first-child{
+.content-block {
+  > *:first-child {
     margin-top: 0;
   }
-  > *:last-child{
+  > *:last-child {
     margin-bottom: 0;
   }
-  p{
+  p {
     font-size: var(--font-medium);
     line-height: 150%;
     letter-spacing: -0.03em;
+    @include only-desktop() {
+      font-size: vw(28);
+    }
   }
 }
