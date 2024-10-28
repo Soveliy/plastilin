@@ -4,6 +4,7 @@
     @include small-tablet {
       white-space: nowrap;
       overflow: auto;
+      scrollbar-width: none;
       margin: 0 -0.9375rem;
       padding: 0 0.9375rem;
     }

@@ -6324,9 +6324,10 @@ const reviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".reviews__sl
 });
 const clients = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](".our-clients__slider", {
   spaceBetween: 0,
+  slidesPerView: 2,
   breakpoints: {
     576: {
-      slidesPerView: 2.2
+      slidesPerView: 3
     },
     1024: {
       slidesPerView: 4

@@ -201,6 +201,10 @@ a {
   position: relative;
 }
 
+.main {
+  background-color: var(--belyy);
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +300,7 @@ a {
 .header {
   padding: 3.3125rem 0 1.375rem;
   border-bottom: 1px solid var(--polosy);
+  background-color: var(--belyy);
 }
 @media (min-width: 1025px) and (max-width: 1919px) {
   .header {
@@ -515,6 +520,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .breadcrumbs__item:not(:first-child) .breadcrumbs__link {
   display: -webkit-box;
@@ -650,6 +657,7 @@ a {
   .tegs__list {
     white-space: nowrap;
     overflow: auto;
+    scrollbar-width: none;
     margin: 0 -0.9375rem;
     padding: 0 0.9375rem;
   }
@@ -2148,7 +2156,7 @@ main .section:last-child {
 .form__policy a {
   color: var(--osnovnoy-tekst);
   text-decoration: underline;
-  text-underline-offset: 2px;
+  text-underline-position: under;
 }
 .form__bottom {
   display: -webkit-box;
@@ -2164,10 +2172,28 @@ main .section:last-child {
     margin-top: 1.0416666667vw;
   }
 }
+@media (max-width: 576px) {
+  .form__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .form__bottom--flex-end {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+}
+@media (max-width: 576px) {
+  .form__bottom--flex-end {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
 }
 .form__bottom--flex-end .form__button {
   margin-left: 2.5rem;
@@ -2175,6 +2201,12 @@ main .section:last-child {
 @media (min-width: 1025px) and (max-width: 1919px) {
   .form__bottom--flex-end .form__button {
     margin-left: 2.0833333333vw;
+  }
+}
+@media (max-width: 576px) {
+  .form__bottom--flex-end .form__button {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 }
 .form__button:disabled {
@@ -2436,7 +2468,11 @@ main .section:last-child {
   }
 }
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: red;
+  :root {
+    --siniy: #1b3990;
+    --chernyy: #fff;
+    --osnovnoy-tekst: rgba(255, 255, 255, 0.8);
+    --belyy: #181818;
+    --belyyWithOpacity: rgba(#181818, 0.7);
   }
 }/*# sourceMappingURL=main.css.map */

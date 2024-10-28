@@ -1,6 +1,7 @@
 .header {
   padding: 3.3125rem 0 1.375rem;
   border-bottom: 1px solid var(--polosy);
+  background-color: var(--belyy);
   @include only-desktop {
     padding: vw(53) 0 vw(22);
   }

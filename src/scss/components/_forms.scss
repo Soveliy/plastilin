@@ -140,7 +140,7 @@
     a {
       color: var(--osnovnoy-tekst);
       text-decoration: underline;
-      text-underline-offset: 2px;
+      text-underline-position: under;
     }
   }
   &__bottom {
@@ -149,13 +149,24 @@
     @include only-desktop() {
       margin-top: vw(20);
     }
+    @include mobile {
+      flex-direction: column;
+    }
 
     &--flex-end {
       justify-content: flex-end;
+      @include mobile {
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
       .form__button {
         margin-left: 2.5rem;
         @include only-desktop() {
           margin-left: vw(40);
+        }
+        @include mobile {
+          margin-left: 0;
+          margin-top: 1rem;
         }
       }
     }

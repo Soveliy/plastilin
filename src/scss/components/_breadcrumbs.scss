@@ -11,6 +11,7 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
   &__item:not(:first-child) {
     .breadcrumbs__link {

@@ -16,9 +16,10 @@ const reviews = new Swiper(".reviews__slider", {
 });
 const clients = new Swiper(".our-clients__slider", {
   spaceBetween: 0,
+  slidesPerView: 2,
   breakpoints: {
     576: {
-      slidesPerView: 2.2,
+      slidesPerView: 3,
     },
     1024: {
       slidesPerView: 4,

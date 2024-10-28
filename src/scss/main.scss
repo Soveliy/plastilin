@@ -26,9 +26,4 @@
 @import "./components/form-section";
 @import "./components/forms";
 @import "./components/burger";
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: red;
-  }
-}
+@import "./dark_theme";
