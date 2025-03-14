@@ -34,8 +34,10 @@
   &__header {
     @include flex-all-sb;
     margin-bottom: 3rem;
+    gap: 1rem;
     @include only-desktop() {
       margin-bottom: vw(48);
+      gap: vw(16);
     }
     @include tablet {
       margin-bottom: 2rem;

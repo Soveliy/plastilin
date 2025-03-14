@@ -5,6 +5,9 @@
     @include only-desktop() {
       margin-top: -vw(73);
     }
+    @include mobile {
+      margin-top: -1.6rem;
+    }
   }
   &__grid {
     display: grid;

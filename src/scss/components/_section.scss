@@ -7,6 +7,9 @@
     @include tablet() {
       padding: 2.5rem 0;
     }
+    @include mobile {
+      padding: 1.6rem 0;
+    }
   }
   &--padding-top-big {
     padding: 7.0625rem 0 4.0625rem;
@@ -16,6 +19,9 @@
     @include tablet() {
       padding: 5rem 0 2.5rem;
     }
+    @include mobile {
+      padding: 3rem 0 1.6rem;
+    }
   }
   &--medium-padding {
     padding: 5.4375rem 0 4.0625rem;
@@ -23,7 +29,10 @@
       padding: vw(87) 0 vw(65);
     }
     @include tablet() {
-      padding: 6rem 0 2.5rem;
+      padding: 3.1rem 0 2.5rem;
+    }
+    @include mobile {
+      padding: 2.2rem 0 1.6rem;
     }
   }
 
@@ -35,6 +44,9 @@
     @include tablet() {
       margin-bottom: 5rem;
     }
+    @include mobile {
+      margin-bottom: 1.6rem;
+    }
     &--medium {
       margin-bottom: 6.25rem;
       @include only-desktop() {
@@ -42,6 +54,9 @@
       }
       @include tablet {
         margin-bottom: 4rem;
+      }
+      @include mobile {
+        margin-bottom: 2.2rem;
       }
     }
   }
@@ -79,6 +94,9 @@ main .section:last-child {
     padding-bottom: vw(120);
   }
   @include tablet() {
-    margin-bottom: 5rem;
+    padding-bottom: 5.625rem;
+  }
+  @include mobile {
+    padding-bottom: 3.825rem;
   }
 }

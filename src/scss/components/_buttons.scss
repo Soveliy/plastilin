@@ -29,6 +29,9 @@
     @include only-desktop() {
       font-size: vw(18);
     }
+    @include tablet {
+      font-size: 1rem;
+    }
   }
 
   &--font-big {
@@ -37,6 +40,9 @@
     font-size: var(--font-medium);
     @include only-desktop() {
       font-size: vw(28);
+    }
+    @include tablet {
+      font-size: 1rem;
     }
   }
 
@@ -51,6 +57,9 @@
     padding: 1.3125rem 5rem;
     @include only-desktop() {
       padding: vw(21) vw(80);
+    }
+    @include tablet {
+      padding: 0.6875rem 1.25rem;
     }
   }
 

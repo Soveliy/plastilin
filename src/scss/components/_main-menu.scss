@@ -5,6 +5,10 @@
     @include only-desktop() {
       gap: vw(60);
     }
+    @include mobile {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
   &__link {
     position: relative;
@@ -16,6 +20,9 @@
     transition: 0.3s;
     @include only-desktop() {
       font-size: vw(18);
+    }
+    @include mobile {
+      font-size: 1.5rem;
     }
     &:before,
     &:after {

@@ -43,7 +43,9 @@
     line-height: 150%;
     letter-spacing: -0.03em;
     color: var(--osnovnoy-tekst);
-
+    @include mobile {
+      max-width: 100%;
+    }
     > *:first-child {
       margin-top: 0;
     }
